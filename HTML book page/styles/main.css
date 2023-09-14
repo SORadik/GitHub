@@ -1,0 +1,259 @@
+.sidebar{
+    background-color: none;
+    display: flex;
+    height: 100vh;
+    flex: 1 0 auto;
+    width: 20%;
+}
+
+.sideBar_title{
+    margin-bottom: 4rem;
+}
+
+/*main content*/
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.mainConent_cntr{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.mainConent_cntr, .bookArticle{
+    width: 50%;
+    margin-right: 4rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.mainConent_cntr, .bookArticle.bookArticle:nth-child(2n){
+    margin-right: 0;
+}
+
+/*Author List*/
+.authorList{
+    background-color: aqua;
+    margin: 0 0 6rem;
+    padding: 0;
+    list-style: none;
+}
+
+.authorList_link{
+    margin-bottom: 100;
+    border-radius: 50%;
+    height: 0;
+    text-align:left;
+    display: inline-block;
+}
+
+.authorOfTheWeek{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-size:165%;
+}
+
+.authorList_item{
+    margin-bottom: 4rem;
+}
+
+.BookOfTheYear{
+    padding-top: 7rem;
+    
+}
+
+.PopularByGenre{
+    text-align:left;
+    margin-top: 0.5rem;
+
+}
+
+.BookOfTheYear_link{
+    margin-bottom: 100;
+    border-radius: 50%;
+    height: 0;
+    text-align:left;
+    display: inline-block;
+    flex-wrap: nowrap; 
+    
+}
+
+.BookOfTheYear_h3{
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    margin-top: 2rem;
+    font-size:165%;
+}
+
+.BookOfTheYear_image{
+    margin-top: 1rem;
+    margin-right: 2rem;
+    box-shadow: 3px 4px 19px rgba(0, 0, 0, 0.25);
+    height: 70px;
+    width: auto;
+    float: left;
+     
+}
+
+.BookOfTheYear_title{
+    text-align: center;
+}
+
+.authorList__name, .bookArticle_author{
+    font-style: normal;
+}
+
+.bookList_image{
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+    box-shadow: 3px 4px 19px rgba(0, 0, 0, 0.25);
+}
+
+/*List of books in the tabs for left side*/
+
+.BookInTab_left{
+    position: absolute;
+    padding-left: 4rem;
+    color: #fff;
+    margin-right: 4rem;
+
+}
+
+.colorbox_left{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    height: 400px;
+    border-radius: 2%;
+    margin-top: 30px;
+
+
+}
+
+.BookInTab_image_left{
+    position: absolute;
+    width: 190px;
+    height: 340px;
+    z-index: 1;
+    box-shadow: 3px 4px 19px rgba(0,0,0,0.25);
+    margin-left: 30px;
+    border-radius: 1%;
+}
+
+.BookInTab_title_left{
+    margin-top: 4rem;
+    padding-left: 25rem;
+    word-spacing: initial;
+    line-height: 0;
+    font-size: larger;
+}
+
+
+.BookInTab_text_left{
+    padding-left: 25rem;
+    padding-top: 50px;
+    font-size: large;
+    
+}
+
+
+/*List of books in the tabs for right side*/
+
+.BookInTab_right{
+    position: absolute;
+    padding-left: 4rem;
+    color: #fff;
+    margin-right: 4rem;
+
+}
+
+.colorbox_right{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    height: 400px;
+    border-radius: 2%;
+    margin-top: 30px;
+}
+
+.BookInTab_image_right{
+    position: absolute;
+    width: 190px;
+    height: 340px;
+    z-index: 1;
+    box-shadow: 3px 4px 19px rgba(0,0,0,0.25);
+    margin-left: 2rem;
+    border-radius: 1%;
+}
+
+.BookInTab_title_right{
+    margin-top: 4rem;
+    padding-left: 25rem;
+    word-spacing: initial;
+    line-height: 0;
+    font-size: larger;
+}
+
+.BookInTab_text_right{
+    padding-left: 25rem;
+    padding-top: 50px;
+    font-size:large;
+}
+
+.BookInTab_text_likes{
+    position: absolute;
+    font-size: 75%;
+    padding-left: 11rem;
+    margin-top: -3rem;
+}
+
+.BookInTab_image_like{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.BookInTab_image_like_1{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin-left: 5%;
+}
+
+.BookInTab_stars{
+    --percent: calc(var(--rating) / 5 * 100%);
+    position: relative;
+    display: inline-block;
+    font-size: var(--star-size);
+    font-family: Times;
+    line-height: 1;
+    height: 1.5rem;
+    width: 100%;
+    margin-left: 25rem;
+    
+
+    &::before {
+        content: "★★★★★";
+        letter-spacing: 3px;
+        background: linear-gradient(90deg,
+                var(--star-background) var(--percent),
+                var(--star-color) var(--percent));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10;
+    }
+}
+hr {
+ margin-top: 4.5rem;
+}

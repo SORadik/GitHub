@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>
+            Home &mdash; Read Books
+        </title>
+
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+        <!-- Tags for Browser rendering -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- SEO Meta tags -->
+        <meta name="description" content="We read books here" />
+        <meta name="keywords" content="read, books, read books" />
+        <meta name="author" content="Read Books" />
+
+        <!-- Open Graph for Social Sharing -->
+        <meta property="og:title" content="Read Books" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://readbooks.com" />
+        <meta property="og:image" content="https://dummyimage.com/600x400/000/fff" />
+
+        <!-- meta images -->
+        <link href="/assets/favicon.ico" type="image/x-icon" />
+
+        <!-- styles -->
+        <link href="styles/global.css" rel="stylesheet" />
+        <link href="styles/home.css" rel="stylesheet" />
+        <link href="styles/reset.css" rel="stylesheet" />
+        <link href="styles/main.css" rel="stylesheet"/>
+        <link href="assets/tabs.css" rel="stylesheet"/>
+        <link href="assets/DotMenu.css" rel="menu_icon"/>
+
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.css"/>
+
+        <!-- Scripts -->
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Organization",
+                "name": "Garden Route Innovation and Technology Hub, NPC",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "George, South Africa",
+                    "postalCode": "6529",
+                    "streetAddress": "Office #2, York St. Blvd Shopping Center"
+                },
+                "email": "jamespargiter@gmail.com",
+                "image": "https://dummyimage.com/600x400/000/fff",
+                "telephone": "+27 72-8929-312",
+            }
+        </script>
+    </head>    
+
+    <body>
+        <header class="header">
+            <div class="headerItem">
+                <ul class="headerItem_list">
+                    <li class="browseBy">
+                        <button class="browseByHeading" type="button">
+                            Browse Category
+
+                            <svg viewBox="0 0 24 24" class="browseBy_icon">
+                                <path d="M8.578 16.359l4.594-4.594-4.594-4.594 1.406-1.406 6 6-6 6z"></path>
+                            </svg>
+                        </button>
+                        
+                        <nav class="browseBy_nav">
+                            <ul class="browseBy_navList">
+                                <li class="browseBy_navItem">
+                                    <a href="" class="browseBy_navLink" title="Browse Genre">
+                                        All Genres
+                                    </a>
+                                </li>
+
+                                <li class="browseBy_navItem">
+                                    <a href="" class="browseBy_navLink" title="Browse business">
+                                        Business
+                                    </a>
+                                </li>
+
+                                <li class="browseBy_navItem">
+                                    <a href="" class="browseBy_navLink" title="Browse Science">
+                                        Science
+                                    </a>
+                                </li>
+
+                                <li class="browseBy_navItem">
+                                    <a href="" class="browseBy_navLink" title="Browse Fiction">
+                                        Fiction
+                                    </a>
+                                </li>
+
+                                <li class="browseBy_navItem">
+                                    <a href="" class="browseBy_navLink" title="Browse Philosophy">
+                                        Philosophy
+                                    </a>
+                                </li>
+
+                                <li class="browseBy_navItem">
+                                    <a href="" class="browseBy_navLink" title="Browse Biography">
+                                        Biography
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </li>
+                </ul>
+
+                <form class="search">
+                    <svg id="icon-search1" viewBox="0 0 24 24" class="search_icon">
+                        <path d="M9.516 14.016c2.484 0 4.5-2.016 4.5-4.5s-2.016-4.5-4.5-4.5-4.5 2.016-4.5 4.5 2.016 4.5 4.5 4.5zM15.516 14.016l4.969 4.969-1.5 1.5-4.969-4.969v-0.797l-0.281-0.281c-1.125 0.984-2.625 1.547-4.219 1.547-3.609 0-6.516-2.859-6.516-6.469s2.906-6.516 6.516-6.516 6.469 2.906 6.469 6.516c0 1.594-0.563 3.094-1.547 4.219l0.281 0.281h0.797z"></path>
+                    </svg>
+                    <input type="search" class="search_control" placeholder="Search Book" />
+                </form>
+            </div>
+
+
+            <a href="" title="readbooks home" class="logo">
+                <span>read</span><strong>books</strong>
+            </a>
+
+
+            <div class="headerItem headerItem--last">
+                <a href="" class="myaccount" title="my account">
+                    <div class="badge"></div>
+                    <img width="50" height="50" src="assets/profile.jpg" class="myAccount_avatar" />
+                </a>
+
+                <button type="button" class="menu">
+                    <svg id="icon-menu" viewBox="0 0 24 24" class="menu_icon">
+                        <path d="M21 11h-18c-0.6 0-1 0.4-1 1s0.4 1 1 1h18c0.6 0 1-0.4 1-1s-0.4-1-1-1z"></path>
+                        <path d="M3 7h18c0.6 0 1-0.4 1-1s-0.4-1-1-1h-18c-0.6 0-1 0.4-1 1s0.4 1 1 1z"></path>
+                        <path d="M21 17h-18c-0.6 0-1 0.4-1 1s0.4 1 1 1h18c0.6 0 1-0.4 1-1s-0.4-1-1-1z"></path>
+                    </svg>
+                    Menu
+                </button>
+            </div>
+        </header>
+
+
+        <section class="bookSlider keen-slider" id="my-keen-slider">
+            <button id="left" class="bookSlider__arrow">
+                <svg id="icon-navigate_next" viewBox="0 0 24 24">
+                    <path d="M15.422 7.406l-4.594 4.594 4.594 4.594-1.406 1.406-6-6 6-6z"></path>
+                </svg>
+            </button>
+
+
+            <article class="book__article orange__article keen-slider__slide">
+                <figure class="book__coverCntr">
+                    <a href="" title="read more about this book">
+                        <img width="250" height="400" src="pictures/the.martian.jpg" alt="book cover" class="book__cover" />
+                    </a>
+                </figure>
+                
+                <div class="book__meta">
+                
+                    <h2 class="book__title">
+                        The Martian
+                    </h2>
+                    <cite class="book__author">
+                        by Andy Weir
+                    </cite>
+
+                    <div class="stars" style="--rating: 3.5"></div>
+
+                    <p class="book__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In assumenda accusantium harum qui! Nesciunt eveniet vitae corrupti soluta illum,
+                    </p>
+
+                    <p>
+                        <a href="" title="read more" class="button">
+                            See The Book
+                        </a>
+                    </p>
+                </div>
+            </article>
+
+
+            <article class="book__article pink__article keen-slider__slide">
+                <figure class="book__coverCntr">
+                    <a href="" title="read more about this book">
+                        <img width="250" height="400" src="pictures/big-magic-1.jpg" alt="book cover" class="book__cover" />
+                    </a>
+                </figure>
+                
+                <div class="book__meta">
+                    <h2 class="book__title">
+                        Big Magic
+                    </h2>
+                    <cite class="book__author">
+                        by Elizabeth Gilbert
+                    </cite>
+
+                    <div class="stars" style="--rating: 3.5"></div>
+
+                    <p class="book__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In assumenda accusantium harum qui! Nesciunt eveniet vitae corrupti soluta illum,
+                    </p>
+
+                    <p>
+                        <a href="" title="read more" class="button">
+                            See The Book
+                        </a>
+                    </p>
+                </div>
+            </article>
+
+
+            <article class="book__article blue__article keen-slider__slide">
+                <figure class="book__coverCntr">
+                    <a href="" title="read more about this book">
+                        <img width="250" height="400" src="pictures/ten.thousand.skies.jpg" alt="book cover" class="book__cover" />
+                    </a>
+                </figure>
+                
+                <div class="book__meta">
+                    <h2 class="book__title">
+                        Ten Thousand Skies
+                    </h2>
+                    <cite class="book__author">
+                        by Claudia Gray
+                    </cite>
+
+                    <div class="stars" style="--rating: 3.5"></div>
+
+                    <p class="book__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In assumenda accusantium harum qui! Nesciunt eveniet vitae corrupti soluta illum,
+                    </p>
+
+                    <p>
+                        <a href="" title="read more" class="button">
+                            See The Book
+                        </a>
+                    </p>
+                </div>
+            </article>
+
+
+            <button id="right" class="bookSlider__arrow bookSlider__arrowRight">
+                <svg id="icon-navigate_next" viewBox="0 0 24 24">
+                    <path d="M9.984 6l6 6-6 6-1.406-1.406 4.594-4.594-4.594-4.594z"></path>
+                </svg>
+            </button>
+        </section>
+
+
+
+        <main class="main">
+
+            <div class="grid-container" style="padding-top: 150px;">
+
+                <div class="grid-item-1">
+                    
+                    <h3 class="authorOfTheWeek">Author of the week</h3>
+
+                    
+
+                    <li  class="authorList_link">
+                        <img width="50" height="50" class="bookList_image" src="pictures/Profile.png"/>
+                        Sebastian Jeremy</p>
+
+                    <li  class="authorList_link">
+                        <img width="50" height="50"  class="bookList_image" src="pictures/Profile.png"/>
+                        Jonathan Doe</p>
+
+                    <li  class="authorList_link">
+                        <img width="50" height="50" class="bookList_image" src="pictures/Profile.png"/>
+                        Angeline Summer</p>
+
+                    <li  class="authorList_link">
+                        <img width="50" height="50" class="bookList_image" src="pictures/Profile.png"/>
+                        Noah Jones    </p>
+                        
+                    <li  class="authorList_link">
+                        <img width="50" height="50" class="bookList_image" src="pictures/Profile.png"/>
+                        Tommy Adams</p>
+
+                    <li  class="authorList_link">
+                        <img width="50" height="50" class="bookList_image" src="pictures/Profile.png"/>
+                        Ian Cassandra</p>
+
+                        <div class="BookOfTheYear">
+
+                            <h3 class="BookOfTheYear_h3">Book of the year</h3>
+
+                         <p class="BookOfTheYear_link"></p>
+                            <img src="pictures/Act like it.jpg" class="BookOfTheYear_image"/>
+                            <strong class="BookOfTheYear_title">Magic: Creative Living Beyond fear</strong> </p>
+                            <p>by Elizabeth Gilbert</p>
+    
+                         <p class="BookOfTheYear_link"></p>
+                            <img src="pictures/Alone on the wall.jpg" class="BookOfTheYear_image"/>
+                            <strong class="BookOfTheYear_title">Magic: Creative Living Beyond fear</strong></p>
+                            <p>by Elizabeth Gilbert</p>
+                        
+                         <p class="BookOfTheYear_link"></p>
+                            <img src="pictures/Book of the year generic.jpg" class="BookOfTheYear_image"/>
+                            <strong class="BookOfTheYear_title">Magic: Creative Living Beyond fear</strong></p>
+                            <p>by Elizabeth Gilbert</p>
+    
+                         <p class="BookOfTheYear_link"></p>
+                            <img src="pictures/Fiction book.jpg" class="BookOfTheYear_image"/>
+                            <strong class="BookOfTheYear_title">Magic: Creative Living Beyond fear</strong></p>
+                            <p>by Elizabeth Gilbert</p>
+
+                         <p class="BookOfTheYear_link"></p>
+                            <img src="pictures/Dark Murder.jpg" class="BookOfTheYear_image"/>
+                            <strong class="BookOfTheYear_title">Magic: Creative Living Beyond fear</strong></p>
+                            <p>by Elizabeth Gilbert</p>
+                         </div>
+
+                        </div>
+
+                         <div class="grid-item-2">
+                           
+
+                            <h3 class="genreTitle">Popular by Genre</h3>
+
+                            <div class="tabset">
+                                
+                                
+                                <input type="radio" name="tabset" id="tab1" aria-controls="All Genres" checked>
+                                <label for="tab1">All Genres</label>
+                                
+                                <input type="radio" name="tabset" id="tab2" aria-controls="Business">
+                                <label for="tab2">Business</label>
+                               
+                                <input type="radio" name="tabset" id="tab3" aria-controls="Science">
+                                <label for="tab3">Science</label>
+
+                                <input type="radio" name="tabset" id="tab4" aria-controls="Fiction">
+                                <label for="tab4">Fiction</label>
+
+                                <input type="radio" name="tabset" id="tab5" aria-controls="Philosophy">
+                                <label for="tab5">Philosophy</label>
+
+                                <input type="radio" name="tabset" id="tab6" aria-controls="Biography">
+                                <label for="tab6">Biography</label>
+                                
+                                <!--All Genres-->
+                                <div class="tab-panels">
+                                    <section id="All Genres" class="tab-panel">
+                                        <a href title="Read More">
+                                        <img class="BookInTab_image_left" src="pictures/Act like it.jpg"/></a>                                 
+                                       <div class="colorbox_left">                                            
+                                            <h2 class="BookInTab_title_left">Act Like It</h2>
+                                            <cite class="BookInTab_title_left">by Lucy Parker</cite>
+                                            <p class="BookInTab_text_left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam laborum pariatur fugit quis distinctio, sequi veniam eos nulla, autem cupiditate a adipisci inventore voluptatibus nam dolore perspiciatis sed doloremque.</p>
+                                                <hr width="550px">
+                                            <img src="pictures/Male generic.jpg" class="BookInTab_image_like_1"/>
+                                            <img src="pictures/Female generic.png" class="BookInTab_image_like"/>
+                                            <p class="BookInTab_text_likes"><strong>Samantha William</strong> and <strong>2 other friends</strong> like this</p>
+                                            <div class="BookInTab_stars" style="--rating: 4; bottom:285px"></div>
+                                        </div>
+                                        <a href title="Read More">
+                                        <img style="position: absolute; top: 600px;" class="BookInTab_image_left" src="pictures/The Painters Daughter.jpg"/></a>
+                                        <div style="position: absolute; top: 600px;" class="colorbox_left">
+                                            <h2 class="BookInTab_title_left">The Painters Daughter</h2>
+                                            <cite class="BookInTab_title_left">by Julie Kiassen</cite>
+                                            <p class="BookInTab_text_left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam laborum pariatur fugit quis distinctio, sequi veniam eos nulla, autem cupiditate a adipisci inventore voluptatibus nam dolore perspiciatis sed doloremque.</p>
+                                                <hr width="550px">
+                                            <img src="pictures/Male generic.jpg" class="BookInTab_image_like_1"/>
+                                            <img src="pictures/Female generic.png" class="BookInTab_image_like"/>
+                                                <p class="BookInTab_text_likes"><strong>Adam </strong>and <strong>Kimberly </strong>like this </p>
+                                            <div class="BookInTab_stars" style="--rating: 4; bottom:285px"></div>
+                                        </div>
+                                        <a href title="Read More">
+                                        <img style="position: absolute; right: 400px;" class="BookInTab_image_right" src="pictures/Alone on the wall.jpg"/></a>
+                                        <div style="position: absolute; right: 20px;" class="colorbox_right" >
+                                            <h2 class="BookInTab_title_right">Alone On The Wall</h2>
+                                            <cite class="BookInTab_title_right">by David Roberts</cite>
+                                            <p class="BookInTab_text_right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam laborum pariatur fugit quis distinctio, sequi veniam eos nulla, autem cupiditate a adipisci inventore voluptatibus nam dolore perspiciatis sed doloremque.</p>
+                                                <hr width="550px">
+                                            <img src="pictures/Male generic.jpg" class="BookInTab_image_like_1"/>
+                                            <img src="pictures/Female generic.png" class="BookInTab_image_like"/>
+                                                <p class="BookInTab_text_likes"><strong>Kimberly Jones   </strong>like this </p>
+                                            <div class="BookInTab_stars" style="--rating: 3; bottom:285px"></div>
+                                        </div>
+                                        <a href title="Read More">
+                                        <img style="position: absolute; right: 400px; top: 600px;" class="BookInTab_image_right" src="pictures/Dark Murder.jpg"/></a>
+                                        <div style="position: absolute; right: 20px; top: 600px;" class="colorbox_right" >
+                                            <h2 class="BookInTab_title_right">Dark Murder</h2>
+                                            <cite class="BookInTab_title_right">by Helen H</cite>
+                                            <p class="BookInTab_text_right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam laborum pariatur fugit quis distinctio, sequi veniam eos nulla, autem cupiditate a adipisci inventore voluptatibus nam dolore perspiciatis sed doloremque.</p>
+                                                <hr width="550px">
+                                            <img src="pictures/Male generic.jpg" class="BookInTab_image_like_1"/>
+                                            <img src="pictures/Female generic.png" class="BookInTab_image_like"/>
+                                                <p class="BookInTab_text_likes"><strong>Samantha William </strong>and <strong>2 other friends </strong> like this</p>
+                                            <div class="BookInTab_stars" style="--rating: 5; bottom:285px"></div>
+                                        </div>
+                                    </section>
+
+                                <!--Business-->
+                                    <section id="Business" class="tab-panel">
+                                        <a href title="Read More">
+                                        <img class="BookInTab_image_left" src="pictures/Business book.jpg"/></a>
+                                        <div class="colorbox_left">
+                                            <h2 class="BookInTab_title_left">Act Like It</h2>
+                                            <cite class="BookInTab_title_left">by Lucy Parker</cite>
+                                            <p class="BookInTab_text_left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam laborum pariatur fugit quis distinctio, sequi veniam eos nulla, autem cupiditate a adipisci inventore voluptatibus nam dolore perspiciatis sed doloremque.</p>
+                                                <hr width="550px">
+                                            <img src="pictures/Male generic.jpg" class="BookInTab_image_like_1"/>
+                                            <img src="pictures/Female generic.png" class="BookInTab_image_like"/>
+                                                <p class="BookInTab_text_likes"><strong>Samantha William </strong>and <strong>2 other friends </strong> like this</p>
+                                            <div class="BookInTab_stars" style="--rating: 4; bottom:285px"></div>
+                                        </div>
+                                        <a href title="Read More">
+                                        <img style="position: absolute; top: 600px;" class="BookInTab_image_left" src="pictures/Business book.jpg"/></a>
+                                        <div style="position: absolute; top: 600px;" class="colorbox_left">
+                                            <h2 class="BookInTab_title_left">The Painters Daughter</h2>
+                                            <cite class="BookInTab_title_left">by Julie Kiassen</cite>
+                                            <p class="BookInTab_text_left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam laborum pariatur fugit quis distinctio, sequi veniam eos nulla, autem cupiditate a adipisci inventore voluptatibus nam dolore perspiciatis sed doloremque.</p>
+                                                <hr width="550px">
+                                            <img src="pictures/Male generic.jpg" class="BookInTab_image_like_1"/>
+                                            <img src="pictures/Female generic.png" class="BookInTab_image_like"/>
+                                                <p class="BookInTab_text_likes"><strong>Samantha William </strong>and <strong>2 other friends </strong> like this</p>
+                                            <div class="BookInTab_stars" style="--rating: 2; bottom:285px"></div>
+                                        </div>
+                                        <a href title="Read More">
+                                        <img style="position: absolute; right: 400px;" class="BookInTab_image_right" src="pictures/Business book.jpg"/></a>
+                                        <div style="position: absolute; right: 20px;" class="colorbox_right" >
+                                            <h2 class="BookInTab_title_right">Alone On The Wall</h2>
+                                            <cite class="BookInTab_title_right">by David Roberts</cite>
+                                            <p class="BookInTab_text_right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam laborum pariatur fugit quis distinctio, sequi veniam eos nulla, autem cupiditate a adipisci inventore voluptatibus nam dolore perspiciatis sed doloremque.</p>
+                                                <hr width="550px">
+                                            <img src="pictures/Male generic.jpg" class="BookInTab_image_like_1"/>
+                                            <img src="pictures/Female generic.png" class="BookInTab_image_like"/>
+                                                <p class="BookInTab_text_likes"><strong>Samantha William </strong>and <strong>2 other friends </strong> like this</p>
+                                            <div class="BookInTab_stars" style="--rating: 3; bottom:285px"></div>
+                                        </div>
+                                        <a href title="Read More">
+                                        <img style="position: absolute; right: 400px; top: 600px;" class="BookInTab_image_right" src="pictures/Business book.jpg"/></a>
+                                        <div style="position: absolute; right: 20px; top: 600px;" class="colorbox_right" >
+                                            <h2 class="BookInTab_title_right">Dark Murder</h2>
+                                            <cite class="BookInTab_title_right">by Helen H</cite>
+                                            <p class="BookInTab_text_right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam laborum pariatur fugit quis distinctio, sequi veniam eos nulla, autem cupiditate a adipisci inventore voluptatibus nam dolore perspiciatis sed doloremque.</p>
+                                                <hr width="550px">
+                                            <img src="pictures/Male generic.jpg" class="BookInTab_image_like_1"/>
+                                            <img src="pictures/Female generic.png" class="BookInTab_image_like"/>
+                                                <p class="BookInTab_text_likes"><strong>Samantha William </strong>and <strong>2 other friends </strong> like this</p>
+                                            <div class="BookInTab_stars" style="--rating: 5; bottom:285px"></div>
+                                        </div> 
+                                    </section>
+                                  
+                                  <!--Science-->
+                                
+                                    <section id="Science" class="tab-panel">
+                                        <a href title="Read More">
+                                        <img class="BookInTab_image_left" src="pictures/Science book.jpg"/></a>
+                                        <div class="colorbox_left">
+                                            <h2 class="BookInTab_title_left">Act Like It</h2>
+                                            <cite class="BookInTab_title_left">by Lucy Parker</cite>
+                                            <p class="BookInTab_text_left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam laborum pariatur fugit quis distinctio, sequi veniam eos nulla, autem cupiditate a adipisci inventore voluptatibus nam dolore perspiciatis sed doloremque.</p>
+                                                <hr width="550px">
+                                            <img src="pictures/Male generic.jpg" class="BookInTab_image_like_1"/>
+                                            <img src="pictures/Female generic.png" class="BookInTab_image_like"/>
+                                                <p class="BookInTab_text_likes"><strong>Samantha William </strong>and <strong>2 other friends </strong> like this</p>
+                                            <div class="BookInTab_stars" style="--rating: 5; bottom:285px"></div>
+                                        </div>
+                                        <a href title="Read More">
+                                        <img style="position: absolute; top: 600px;" class="BookInTab_image_left" src="pictures/Science book.jpg"/></a>
+                                        <div style="position: absolute; top: 600px;" class="colorbox_left">
+                                            <h2 class="BookInTab_title_left">The Painters Daughter</h2>
+                                            <cite class="BookInTab_title_left">by Julie Kiassen</cite>
+                                            <p class="BookInTab_text_left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam laborum pariatur fugit quis distinctio, sequi veniam eos nulla, autem cupiditate a adipisci inventore voluptatibus nam dolore perspiciatis sed doloremque.</p>
+                                                <hr width="550px">
+                                            <img src="pictures/Male generic.jpg" class="BookInTab_image_like_1"/>
+                                            <img src="pictures/Female generic.png" class="BookInTab_image_like"/>
+                                                <p class="BookInTab_text_likes"><strong>Samantha William </strong>and <strong>2 other friends </strong> like this</p>
+                                            <div class="BookInTab_stars" style="--rating: 5; bottom:285px"></div>
+                                        </div>
+                                        <a href title="Read More">
+                                        <img style="position: absolute; right: 400px;" class="BookInTab_image_right" src="pictures/Science book.jpg"/></a>
+                                        <div style="position: absolute; right: 20px;" class="colorbox_right" >
+                                            <h2 class="BookInTab_title_right">Alone On The Wall</h2>
+                                            <cite class="BookInTab_title_right">by David Roberts</cite>
+                                            <p class="BookInTab_text_right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam laborum pariatur fugit quis distinctio, sequi veniam eos nulla, autem cupiditate a adipisci inventore voluptatibus nam dolore perspiciatis sed doloremque.</p>
+                                                <hr width="550px">
+                                            <img src="pictures/Male generic.jpg" class="BookInTab_image_like_1"/>
+                                            <img src="pictures/Female generic.png" class="BookInTab_image_like"/>
+                                                <p class="BookInTab_text_likes"><strong>Samantha William </strong>and <strong>2 other friends </strong> like this</p>
+                                            <div class="BookInTab_stars" style="--rating: 5; bottom:285px"></div>
+                                        </div>
+                                        <a href title="Read More">
+                                        <img style="position: absolute; right: 400px; top: 600px;" class="BookInTab_image_right" src="pictures/Science book.jpg"/></a>
+                                        <div style="position: absolute; right: 20px; top: 600px;" class="colorbox_right" >
+                                            <h2 class="BookInTab_title_right">Dark Murder</h2>
+                                            <cite class="BookInTab_title_right">by Helen H</cite>
+                                            <p class="BookInTab_text_right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam laborum pariatur fugit quis distinctio, sequi veniam eos nulla, autem cupiditate a adipisci inventore voluptatibus nam dolore perspiciatis sed doloremque.</p>
+                                                <hr width="550px">
+                                            <img src="pictures/Male generic.jpg" class="BookInTab_image_like_1"/>
+                                            <img src="pictures/Female generic.png" class="BookInTab_image_like"/>
+                                                <p class="BookInTab_text_likes"><strong>Samantha William </strong>and <strong>2 other friends </strong> like this</p>
+                                            <div class="BookInTab_stars" style="--rating: 5; bottom:285px"></div>
+                                        </div> 
+                                    </section>
+
+                                  <!--Fiction-->
+
+                                    <section id="Fiction" class="tab-panel">
+                                        <a href title="Read More">
+                                        <img class="BookInTab_image_left" src="pictures/Fiction book.jpg"/></a>
+                                        <div class="colorbox_left">
+                                            <h2 class="BookInTab_title_left">Act Like It</h2>
+                                            <cite class="BookInTab_title_left">by Lucy Parker</cite>
+                                            <p class="BookInTab_text_left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam laborum pariatur fugit quis distinctio, sequi veniam eos nulla, autem cupiditate a adipisci inventore voluptatibus nam dolore perspiciatis sed doloremque.</p>
+                                                <hr width="550px">
+                                            <img src="pictures/Male generic.jpg" class="BookInTab_image_like_1"/>
+                                            <img src="pictures/Female generic.png" class="BookInTab_image_like"/>
+                                                <p class="BookInTab_text_likes"><strong>Samantha William </strong>and <strong>2 other friends </strong> like this</p>
+                                            <div class="BookInTab_stars" style="--rating: 5; bottom:285px"></div>
+                                        </div>
+                                        <a href title="Read More">
+                                        <img style="position: absolute; top: 600px;" class="BookInTab_image_left" src="pictures/Fiction book.jpg"/></a>
+                                        <div style="position: absolute; top: 600px;" class="colorbox_left">
+                                            <h2 class="BookInTab_title_left">The Painters Daughter</h2>
+                                            <cite class="BookInTab_title_left">by Julie Kiassen</cite>
+                                            <p class="BookInTab_text_left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam laborum pariatur fugit quis distinctio, sequi veniam eos nulla, autem cupiditate a adipisci inventore voluptatibus nam dolore perspiciatis sed doloremque.</p>
+                                                <hr width="550px">
+                                            <img src="pictures/Male generic.jpg" class="BookInTab_image_like_1"/>
+                                            <img src="pictures/Female generic.png" class="BookInTab_image_like"/>
+                                                <p class="BookInTab_text_likes"><strong>Samantha William </strong>and <strong>2 other friends </strong> like this</p>
+                                            <div class="BookInTab_stars" style="--rating: 5; bottom:285px"></div>
+                                        </div>
+                                        <a href title="Read More">
+                                        <img style="position: absolute; right: 400px;" class="BookInTab_image_right" src="pictures/Fiction book.jpg"/></a>
+                                        <div style="position: absolute; right: 20px;" class="colorbox_right" >
+                                            <h2 class="BookInTab_title_right">Alone On The Wall</h2>
+                                            <cite class="BookInTab_title_right">by David Roberts</cite>
+                                            <p class="BookInTab_text_right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam laborum pariatur fugit quis distinctio, sequi veniam eos nulla, autem cupiditate a adipisci inventore voluptatibus nam dolore perspiciatis sed doloremque.</p>
+                                                <hr width="550px">
+                                            <img src="pictures/Male generic.jpg" class="BookInTab_image_like_1"/>
+                                            <img src="pictures/Female generic.png" class="BookInTab_image_like"/>
+                                                <p class="BookInTab_text_likes"><strong>Samantha William </strong>and <strong>2 other friends </strong> like this</p>
+                                            <div class="BookInTab_stars" style="--rating: 5; bottom:285px"></div>
+                                        </div>
+                                        <a href title="Read More">
+                                        <img style="position: absolute; right: 400px; top: 600px;" class="BookInTab_image_right" src="pictures/Fiction book.jpg"/></a>
+                                        <div style="position: absolute; right: 20px; top: 600px;" class="colorbox_right" >
+                                            <h2 class="BookInTab_title_right">Dark Murder</h2>
+                                            <cite class="BookInTab_title_right">by Helen H</cite>
+                                            <p class="BookInTab_text_right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam laborum pariatur fugit quis distinctio, sequi veniam eos nulla, autem cupiditate a adipisci inventore voluptatibus nam dolore perspiciatis sed doloremque.</p>
+                                                <hr width="550px">
+                                            <img src="pictures/Male generic.jpg" class="BookInTab_image_like_1"/>
+                                            <img src="pictures/Female generic.png" class="BookInTab_image_like"/>
+                                                <p class="BookInTab_text_likes"><strong>Samantha William </strong>and <strong>2 other friends </strong> like this</p>
+                                            <div class="BookInTab_stars" style="--rating: 5; bottom:285px"></div>
+                                        </div> 
+                                    </section>
+
+                                  <!--Philosophy-->
+
+                                    <section id="Philosophy" class="tab-panel">
+                                        <a href title="Read More">
+                                        <img class="BookInTab_image_left" src="pictures/Philosophy book.jpg"/></a>
+                                        <div class="colorbox_left">
+                                            <h2 class="BookInTab_title_left">Act Like It</h2>
+                                            <cite class="BookInTab_title_left">by Lucy Parker</cite>
+                                            <p class="BookInTab_text_left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam laborum pariatur fugit quis distinctio, sequi veniam eos nulla, autem cupiditate a adipisci inventore voluptatibus nam dolore perspiciatis sed doloremque.</p>
+                                                <hr width="550px">
+                                            <img src="pictures/Male generic.jpg" class="BookInTab_image_like_1"/>
+                                            <img src="pictures/Female generic.png" class="BookInTab_image_like"/>
+                                                <p class="BookInTab_text_likes"><strong>Samantha William </strong>and <strong>2 other friends </strong> like this</p>
+                                            <div class="BookInTab_stars" style="--rating: 5; bottom:285px"></div>
+                                        </div>
+                                        <a href title="Read More">
+                                        <img style="position: absolute; top: 600px;" class="BookInTab_image_left" src="pictures/Philosophy book.jpg"/></a>
+                                        <div style="position: absolute; top: 600px;" class="colorbox_left">
+                                            <h2 class="BookInTab_title_left">The Painters Daughter</h2>
+                                            <cite class="BookInTab_title_left">by Julie Kiassen</cite>
+                                            <p class="BookInTab_text_left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam laborum pariatur fugit quis distinctio, sequi veniam eos nulla, autem cupiditate a adipisci inventore voluptatibus nam dolore perspiciatis sed doloremque.</p>
+                                                <hr width="550px">
+                                            <img src="pictures/Male generic.jpg" class="BookInTab_image_like_1"/>
+                                            <img src="pictures/Female generic.png" class="BookInTab_image_like"/>
+                                                <p class="BookInTab_text_likes"><strong>Samantha William </strong>and <strong>2 other friends </strong> like this</p>
+                                            <div class="BookInTab_stars" style="--rating: 5; bottom:285px"></div>
+                                        </div>
+                                        <a href title="Read More">
+                                        <img style="position: absolute; right: 400px;" class="BookInTab_image_right" src="pictures/Philosophy book.jpg"/></a>
+                                        <div style="position: absolute; right: 20px;" class="colorbox_right" >
+                                            <h2 class="BookInTab_title_right">Alone On The Wall</h2>
+                                            <cite class="BookInTab_title_right">by David Roberts</cite>
+                                            <p class="BookInTab_text_right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam laborum pariatur fugit quis distinctio, sequi veniam eos nulla, autem cupiditate a adipisci inventore voluptatibus nam dolore perspiciatis sed doloremque.</p>
+                                                <hr width="550px">
+                                            <img src="pictures/Male generic.jpg" class="BookInTab_image_like_1"/>
+                                            <img src="pictures/Female generic.png" class="BookInTab_image_like"/>
+                                                <p class="BookInTab_text_likes"><strong>Samantha William </strong>and <strong>2 other friends </strong> like this</p>
+                                            <div class="BookInTab_stars" style="--rating: 5; bottom:285px"></div>                                                
+                                        </div>
+                                        <a href title="Read More">
+                                        <img style="position: absolute; right: 400px; top: 600px;" class="BookInTab_image_right" src="pictures/Philosophy book.jpg"/></a>
+                                        <div style="position: absolute; right: 20px; top: 600px;" class="colorbox_right" >
+                                            <h2 class="BookInTab_title_right">Dark Murder</h2>
+                                            <cite class="BookInTab_title_right">by Helen H</cite>
+                                            <p class="BookInTab_text_right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam laborum pariatur fugit quis distinctio, sequi veniam eos nulla, autem cupiditate a adipisci inventore voluptatibus nam dolore perspiciatis sed doloremque.</p>
+                                                <hr width="550px">
+                                            <img src="pictures/Male generic.jpg" class="BookInTab_image_like_1"/>
+                                            <img src="pictures/Female generic.png" class="BookInTab_image_like"/>
+                                                <p class="BookInTab_text_likes"><strong>Samantha William </strong>and <strong>2 other friends </strong> like this</p>
+                                            <div class="BookInTab_stars" style="--rating: 5; bottom:285px"></div>
+                                        </div> 
+                                    </section>
+
+                                  <!--Biography-->
+
+                                    <section id="Biography" class="tab-panel">
+                                        <a href title="Read More">
+                                        <img class="BookInTab_image_left" src="pictures/Act like it.jpg"/></a>
+                                        <div class="colorbox_left">
+                                            <h2 class="BookInTab_title_left">Act Like It</h2>
+                                            <cite class="BookInTab_title_left">by Lucy Parker</cite>
+                                            <p class="BookInTab_text_left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam laborum pariatur fugit quis distinctio, sequi veniam eos nulla, autem cupiditate a adipisci inventore voluptatibus nam dolore perspiciatis sed doloremque.</p>
+                                                <hr width="550px">
+                                            <img src="pictures/Male generic.jpg" class="BookInTab_image_like_1"/>
+                                            <img src="pictures/Female generic.png" class="BookInTab_image_like"/>
+                                                <p class="BookInTab_text_likes"><strong>Samantha William </strong>and <strong>2 other friends </strong> like this</p>
+                                            <div class="BookInTab_stars" style="--rating: 5; bottom:285px"></div>                                   
+                                        </div>
+                                        <a href title="Read More">
+                                        <img style="position: absolute; top: 600px;" class="BookInTab_image_left" src="pictures/The Painters Daughter.jpg"/></a>
+                                        <div style="position: absolute; top: 600px;" class="colorbox_left">
+                                            <h2 class="BookInTab_title_left">The Painters Daughter</h2>
+                                            <cite class="BookInTab_title_left">by Julie Kiassen</cite>
+                                            <p class="BookInTab_text_left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam laborum pariatur fugit quis distinctio, sequi veniam eos nulla, autem cupiditate a adipisci inventore voluptatibus nam dolore perspiciatis sed doloremque.</p>
+                                                <hr width="550px">
+                                            <img src="pictures/Male generic.jpg" class="BookInTab_image_like_1"/>
+                                            <img src="pictures/Female generic.png" class="BookInTab_image_like"/>
+                                                <p class="BookInTab_text_likes"><strong>Samantha William </strong>and <strong>2 other friends </strong> like this</p> 
+                                            <div class="BookInTab_stars" style="--rating: 5; bottom:285px"></div>                                   
+                                        </div>
+                                        <a href title="Read More">
+                                        <img style="position: absolute; right: 400px;" class="BookInTab_image_right" src="pictures/Alone on the wall.jpg"/></a>
+                                        <div style="position: absolute; right: 20px;" class="colorbox_right" >
+                                            <h2 class="BookInTab_title_right">Alone On The Wall</h2>
+                                            <cite class="BookInTab_title_right">by David Roberts</cite>
+                                            <p class="BookInTab_text_right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam laborum pariatur fugit quis distinctio, sequi veniam eos nulla, autem cupiditate a adipisci inventore voluptatibus nam dolore perspiciatis sed doloremque.</p>
+                                                <hr width="550px">
+                                            <img src="pictures/Male generic.jpg" class="BookInTab_image_like_1"/>
+                                            <img src="pictures/Female generic.png" class="BookInTab_image_like"/>
+                                                <p class="BookInTab_text_likes"><strong>Samantha William </strong>and <strong>2 other friends </strong> like this</p> 
+                                            <div class="BookInTab_stars" style="--rating: 5; bottom:285px"></div>
+                                        </div>
+                                        <a href title="Read More">
+                                        <img style="position: absolute; right: 400px; top: 600px;" class="BookInTab_image_right" src="pictures/Dark Murder.jpg"/></a>
+                                        <div style="position: absolute; right: 20px; top: 600px;" class="colorbox_right" >
+                                            <h2 class="BookInTab_title_right">Dark Murder</h2>
+                                            <cite class="BookInTab_title_right">by Helen H</cite>
+                                            <p class="BookInTab_text_right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam laborum pariatur fugit quis distinctio, sequi veniam eos nulla, autem cupiditate a adipisci inventore voluptatibus nam dolore perspiciatis sed doloremque.</p>
+                                                <hr width="550px">
+                                            <img src="pictures/Male generic.jpg" class="BookInTab_image_like_1"/>
+                                            <img src="pictures/Female generic.png" class="BookInTab_image_like"/>
+                                                <p class="BookInTab_text_likes"><strong>Samantha William </strong>and <strong>2 other friends </strong> like this</p>
+                                            <div class="BookInTab_stars" style="--rating: 5; bottom:285px"></div> 
+                                        </div> 
+                                    </section>
+                                </div>
+                                
+                              </div>
+                              
+                        </div>
+                        
+              </div>
+        </main>
+     
+
+
+
+        <footer class="footer">
+
+
+  
+        </footer>
+    
+
+
+        <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script>
+        <script src="assets/DotMenu.js"></script>
+
+        <script>
+            const slider = new KeenSlider("#my-keen-slider", {
+                loop: true,
+                initial: 2,
+                slides: {
+                    origin: "center",
+                    perView: 2.5,
+                    spacing: 1,
+                },
+            })
+
+            document.querySelector("#left").addEventListener("click", () => {
+                slider.prev()
+            })
+
+            document.querySelector("#right").addEventListener("click", () => {
+                slider.next()
+            })
+        </script>
+    </body>
+</html>

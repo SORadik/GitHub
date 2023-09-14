@@ -1,0 +1,10 @@
+.icon {
+  position: relative;
+    display: inline-block;
+    width: 5em;
+    height: 5em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    z-index:  9;
+  }
